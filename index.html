@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GodsRig | Soporte técnico y ensamble de PC · by God's Plan</title>
+    <meta name="description" content="GodsRig, de God's Plan: armado de PC, limpieza, optimización y upgrades. Rendimiento óptimo y trabajo profesional.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainBg: '#0a0a0a',     /* Casi negro */
+                        pureBlack: '#000000',  /* Negro puro */
+                        bloodRed: '#8a0303',   /* Rojo sangre */
+                        pastelRed: '#ffb3b3',  /* Rojo pastel */
+                        lightText: '#f3f4f6'   /* Blanco humo / Gris muy claro */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(138, 3, 3, 0.05) 1px, transparent 1px), 
+                linear-gradient(to bottom, rgba(138, 3, 3, 0.05) 1px, transparent 1px);
+        }
+
+        /* Ocultar barra de desplazamiento manteniendo funcionalidad */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8a0303;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffb3b3;
+        }
+    </style>
+    <link rel="canonical" href="https://rig.godsplan.site/">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230a0a0a'/%3E%3Cpath%20d='M28%2010h8v16h16v8H36v22h-8V34H12v-8h16z'%20fill='%238a0303'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="GodsRig · by God's Plan">
+    <meta property="og:title" content="GodsRig | Soporte técnico y ensamble de PC">
+    <meta property="og:description" content="GodsRig, de God's Plan: armado de PC, limpieza, optimización y upgrades. Rendimiento óptimo y trabajo profesional.">
+    <meta property="og:url" content="https://rig.godsplan.site/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GodsRig | Soporte técnico y ensamble de PC">
+    <meta name="twitter:description" content="GodsRig, de God's Plan: armado de PC, limpieza, optimización y upgrades. Rendimiento óptimo y trabajo profesional.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GodsRig",
+      "url": "https://rig.godsplan.site/",
+      "description": "Soporte técnico, ensamble y optimización de PC.",
+      "email": "contacto@godsplan.site",
+      "telephone": "+525510590927",
+      "areaServed": "MX",
+      "parentOrganization": { "@type": "Organization", "name": "God's Plan", "url": "https://godsplan.site/" }
+    }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen selection:bg-bloodRed selection:text-white antialiased">
+
+    <header class="fixed w-full top-0 z-50 bg-mainBg/80 backdrop-blur-lg border-b border-bloodRed/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#" class="font-display text-xl md:text-2xl font-black tracking-widest text-pastelRed uppercase flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Gods<span class="text-white">Rig</span></span>
+            </a>
+            
+            <!-- Navigation & Contact -->
+            <div class="flex items-center gap-4 md:gap-6">
+                <a href="https://godsplan.site" class="hidden md:inline text-xs text-gray-500 hover:text-pastelRed transition-colors">by God's Plan</a>
+                <a href="catalogo.html" class="text-sm md:text-base font-bold text-gray-300 hover:text-pastelRed transition-colors uppercase tracking-wide">
+                    Catálogo
+                </a>
+                <a href="https://wa.me/525510590927" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-bloodRed text-white font-bold rounded hover:bg-pastelRed hover:text-pureBlack transition-colors duration-300 shadow-[0_0_10px_rgba(138,3,3,0.5)]">
+                    <span class="hidden sm:inline">Contáctanos</span>
+                    <span class="sm:hidden">WhatsApp</span>
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16 md:pt-20">
+        <section class="relative px-4 sm:px-6 py-20 md:py-32 flex items-center justify-center min-h-[85vh] bg-grid overflow-hidden">
+            <!-- Resplandor central -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-bloodRed/20 rounded-full blur-[80px] pointer-events-none"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
+                <!-- Etiqueta -->
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pureBlack border border-bloodRed/30 text-pastelRed text-xs sm:text-sm font-medium mb-6 md:mb-8">
+                    <span class="w-2 h-2 rounded-full bg-bloodRed animate-pulse"></span>
+                    Optimizamos tu PC
+                </div>
+                
+                <!-- Título -->
+                <h1 class="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-lightText mb-4 uppercase tracking-tighter leading-[1.1]">
+                    Máximo Rendimiento.
+                    <br class="hidden sm:block">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-bloodRed to-pastelRed">Resultados Claros.</span>
+                </h1>
+                
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Ensambles a medida, limpieza a fondo y optimización de software para maximizar el rendimiento de tu equipo. Trabajo directo y profesional.
+                </p>
+                
+                <!-- CTA Principal -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 items-center">
+                    <a href="catalogo.html" class="w-full sm:w-auto text-center px-8 py-4 bg-pureBlack border border-bloodRed/50 text-lightText font-bold uppercase rounded hover:border-pastelRed hover:text-pastelRed transition-all duration-300">
+                        Ver Catálogo
+                    </a>
+                    <a href="https://wa.me/525510590927" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-bloodRed text-white px-8 py-4 font-bold uppercase rounded hover:bg-pastelRed hover:text-pureBlack transition-all duration-300 shadow-[0_0_20px_rgba(138,3,3,0.4)]">
+                        Cotizar ahora
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-16 md:py-24 px-4 sm:px-6 bg-pureBlack relative border-y border-bloodRed/10">
+            <div class="max-w-7xl mx-auto relative z-10">
+                
+                <div class="mb-10 md:mb-16">
+                    <h2 class="font-display text-3xl md:text-5xl font-black text-lightText uppercase mb-2">Servicios para <span class="text-bloodRed">tu equipo</span></h2>
+                    <p class="text-gray-400 max-w-xl text-sm md:text-base">Diagnósticos precisos y soluciones directas para que tu equipo vuelva a funcionar correctamente lo antes posible.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <!-- Servicio 1 -->
+                    <div class="bg-mainBg p-6 rounded-lg border border-bloodRed/20 hover:border-bloodRed transition-colors duration-300 group">
+                        <div class="w-12 h-12 bg-pureBlack rounded flex items-center justify-center mb-4 text-pastelRed group-hover:text-bloodRed transition-colors border border-bloodRed/10 group-hover:border-bloodRed/50">
+                            <i class="fa-solid fa-gauge-high text-xl"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-lightText mb-2 uppercase">Optimización de Sistema</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Limpiamos el sistema operativo. Eliminamos virus, software innecesario y ajustamos la configuración para un inicio rápido.</p>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="bg-mainBg p-6 rounded-lg border border-bloodRed/20 hover:border-bloodRed transition-colors duration-300 group">
+                        <div class="w-12 h-12 bg-pureBlack rounded flex items-center justify-center mb-4 text-pastelRed group-hover:text-bloodRed transition-colors border border-bloodRed/10 group-hover:border-bloodRed/50">
+                            <i class="fa-solid fa-broom text-xl"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-lightText mb-2 uppercase">Limpieza y Mantenimiento</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Desarmado completo, limpieza de polvo, cambio de pasta térmica de alta calidad y organización de cables.</p>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="bg-mainBg p-6 rounded-lg border border-bloodRed/20 hover:border-bloodRed transition-colors duration-300 group">
+                        <div class="w-12 h-12 bg-pureBlack rounded flex items-center justify-center mb-4 text-pastelRed group-hover:text-bloodRed transition-colors border border-bloodRed/10 group-hover:border-bloodRed/50">
+                            <i class="fa-solid fa-memory text-xl"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-lightText mb-2 uppercase">Actualizaciones / Upgrades</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Mejora el rendimiento de tu equipo instalando más memoria RAM, una nueva tarjeta gráfica o una unidad SSD, manteniendo tus archivos seguros.</p>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="bg-mainBg p-6 rounded-lg border border-bloodRed/20 hover:border-bloodRed transition-colors duration-300 group">
+                        <div class="w-12 h-12 bg-pureBlack rounded flex items-center justify-center mb-4 text-pastelRed group-hover:text-bloodRed transition-colors border border-bloodRed/10 group-hover:border-bloodRed/50">
+                            <i class="fa-solid fa-desktop text-xl"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-lightText mb-2 uppercase">Ensamble de Equipos</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Ensamblamos tu computadora desde cero. Tú defines el presupuesto o los componentes, nosotros nos encargamos del resto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="py-16 md:py-24 px-4 sm:px-6 bg-mainBg relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10 md:mb-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pureBlack border border-bloodRed text-pastelRed text-xs sm:text-sm font-medium mb-4">
+                        <span class="w-2 h-2 rounded-full bg-bloodRed animate-pulse"></span>
+                        Precios Especiales de Introducción
+                    </div>
+                    <h2 class="font-display text-3xl md:text-5xl font-black text-lightText uppercase mb-2">Servicios <span class="text-pastelRed"> Estrella.</span></h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base px-2">Calidad corporativa a precios accesibles. Paga solo lo justo por un trabajo bien hecho.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Tarjeta 1: Limpieza y Software -->
+                    <div class="bg-pureBlack rounded-xl p-6 border border-bloodRed/20 flex flex-col hover:-translate-y-1 transition-transform duration-300">
+                        <h3 class="font-display text-xl font-bold uppercase mb-1">Mantenimiento y Software</h3>
+                        <div class="flex items-end gap-1 mb-4">
+                            <span class="text-pastelRed font-black text-4xl">$200</span>
+                            <span class="text-gray-500 text-sm mb-1">MXN (Desde)</span>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-3 mb-8 flex-grow">
+                            <li class="flex items-center justify-between border-b border-gray-800 pb-2">
+                                <span><i class="fa-solid fa-bug-slash text-bloodRed mr-2"></i> Rescate de Sistema</span>
+                                <span class="text-lightText font-bold">$200</span>
+                            </li>
+                            <li class="flex items-center justify-between border-b border-gray-800 pb-2">
+                                <span><i class="fa-solid fa-broom text-bloodRed mr-2"></i> Mantenimiento Preventivo</span>
+                                <span class="text-lightText font-bold">$250</span>
+                            </li>
+                            <li class="flex items-center justify-between border-b border-gray-800 pb-2">
+                                <span><i class="fa-brands fa-windows text-bloodRed mr-2"></i> Formateo Básico</span>
+                                <span class="text-lightText font-bold">$250</span>
+                            </li>
+                        </ul>
+                        <a href="catalogo.html" class="w-full text-center py-3 border border-bloodRed/50 text-lightText font-bold rounded hover:bg-bloodRed hover:border-bloodRed transition-colors">Ver Detalles</a>
+                    </div>
+
+                    <!-- Tarjeta 2: Resurrección (Destacado) -->
+                    <div class="bg-mainBg rounded-xl p-6 border-2 border-bloodRed relative flex flex-col transform md:-translate-y-4 shadow-[0_10px_30px_rgba(138,3,3,0.15)]">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-bloodRed text-white text-xs font-bold px-4 py-1 rounded-full uppercase"><i class="fa-solid fa-fire mr-1"></i> Más Pedido</div>
+                        <h3 class="font-display text-xl font-bold uppercase mb-1 mt-2">Resurrección PC/Laptop</h3>
+                        <div class="flex items-end gap-1 mb-4">
+                            <span class="text-pastelRed font-black text-4xl">$450</span>
+                            <span class="text-gray-500 text-sm mb-1">MXN (Mano de obra)</span>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-3 mb-8 flex-grow">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-rocket text-bloodRed mt-1"></i> Instalación de Disco Sólido (SSD)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-bloodRed mt-1"></i> Formateo limpio con Windows 10/11</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-gauge-high text-bloodRed mt-1"></i> Tu equipo quedará hasta 10 veces más rápido. Garantizado.</li>
+                            <li class="flex items-start gap-2 text-pastelRed mt-4 font-medium bg-pureBlack p-2 rounded border border-bloodRed/20"><i class="fa-solid fa-circle-info text-bloodRed mt-1"></i> El disco SSD se cotiza aparte según los GB que necesites.</li>
+                        </ul>
+                        <a href="https://wa.me/525510590927" target="_blank" class="w-full text-center py-3 bg-bloodRed text-white font-bold rounded hover:bg-pastelRed hover:text-pureBlack transition-colors shadow-[0_0_15px_rgba(138,3,3,0.5)]">Agendar Servicio</a>
+                    </div>
+
+                    <!-- Tarjeta 3: más servicios de God's Plan -->
+                    <div class="bg-pureBlack rounded-xl p-6 border border-bloodRed/20 flex flex-col hover:-translate-y-1 transition-transform duration-300">
+                        <h3 class="font-display text-xl font-bold uppercase mb-1">Más de God's Plan</h3>
+                        <p class="text-gray-500 text-sm mb-4">GodsRig es parte de una agencia de proyectos.</p>
+                        <ul class="text-gray-400 text-sm space-y-3 mb-8 flex-grow">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-globe text-bloodRed"></i> Webs para negocios</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-glass-cheers text-bloodRed"></i> Invitaciones digitales</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-diagram-project text-bloodRed"></i> Sistemas a medida</li>
+                        </ul>
+                        <a href="https://godsplan.site/#servicios" class="w-full text-center py-3 border border-bloodRed/50 text-lightText font-bold rounded hover:bg-bloodRed hover:border-bloodRed transition-colors">Ver God's Plan</a>
+                    </div>
+                </div>
+                
+                <!-- Botón hacia el catálogo -->
+                <div class="mt-12 text-center">
+                    <a href="catalogo.html" class="inline-flex items-center gap-2 px-6 py-3 bg-pureBlack border border-pastelRed text-pastelRed font-bold uppercase rounded hover:bg-pastelRed hover:text-pureBlack transition-all duration-300 shadow-[0_0_15px_rgba(255,179,179,0.2)]">
+                        Ver Catálogo Completo de Servicios <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-pureBlack border-t border-bloodRed/10 text-center">
+            <div class="max-w-3xl mx-auto">
+                <i class="fa-solid fa-shield-halved text-4xl text-bloodRed mb-4"></i>
+                <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-lightText mb-4">Atención Especializada</h2>
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                    Manejamos cada equipo con cuidado profesional. Utilizamos herramientas adecuadas, protección antiestática y realizamos diagnósticos precisos para solucionar cualquier falla correctamente.
+                </p>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-16 md:py-24 px-4 sm:px-6 bg-grid border-t border-bloodRed/20">
+            <div class="max-w-2xl mx-auto bg-mainBg border border-bloodRed/30 p-8 md:p-12 rounded-xl text-center relative overflow-hidden shadow-[0_0_30px_rgba(138,3,3,0.1)]">
+                <!-- Efecto de luz interno -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-bloodRed/20 blur-[40px]"></div>
+                
+                <h2 class="font-display text-2xl md:text-4xl font-black uppercase mb-4 relative z-10">¿Listo para mejorar tu equipo?</h2>
+                <p class="text-gray-400 mb-8 relative z-10 text-sm md:text-base">Escríbenos por WhatsApp o a contacto@godsplan.site. Te atenderemos personalmente para elaborar una cotización y dejar tu equipo en óptimas condiciones.</p>
+                
+                <a href="https://wa.me/525510590927" target="_blank" rel="noopener noreferrer" class="relative z-10 w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded font-bold hover:bg-white hover:text-[#25D366] transition-all duration-300 shadow-[0_4px_15px_rgba(37,211,102,0.3)]">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Escribir por WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pureBlack border-t border-bloodRed/30 py-10 px-4 mt-auto">
+        <div class="max-w-5xl mx-auto flex flex-col items-center gap-5 text-center">
+            <a href="index.html" class="font-display text-lg font-black tracking-widest text-pastelRed uppercase flex items-center gap-2">
+                <i class="fa-solid fa-microchip"></i> Gods<span class="text-white">Rig</span>
+            </a>
+            <p class="text-gray-500 text-xs">GodsRig es un proyecto de <a href="https://godsplan.site" class="text-pastelRed hover:text-white transition-colors">God's Plan</a>, agencia de proyectos.</p>
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500" aria-label="Pie de página">
+                <a href="catalogo.html" class="hover:text-pastelRed transition-colors">Catálogo</a>
+                <a href="https://godsplan.site" class="hover:text-pastelRed transition-colors">God's Plan</a>
+                <a href="https://godsplan.site/privacidad.html" class="hover:text-pastelRed transition-colors">Aviso de privacidad</a>
+                <a href="https://godsplan.site/tyc.html" class="hover:text-pastelRed transition-colors">Términos y condiciones</a>
+                <a href="mailto:contacto@godsplan.site" class="hover:text-pastelRed transition-colors">contacto@godsplan.site</a>
+            </nav>
+            <p class="text-gray-600 text-xs">&copy; 2026 GodsRig · by God's Plan · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525510590927" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(37,211,102,0.5)] hover:scale-110 hover:shadow-[0_4px_25px_rgba(37,211,102,0.7)] transition-all duration-300 z-50 group">
+        <i class="fa-brands fa-whatsapp text-3xl group-hover:animate-pulse"></i>
+        <!-- Efecto de onda (ping) -->
+        <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-30 animate-ping -z-10"></span>
+    </a>
+
+</body>
+</html>
