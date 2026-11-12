@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forja Box y Fuerza | Clases de 12 personas, sin contratos · Iztacalco</title>
+<meta name="description" content="Gimnasio de box y fuerza en Iztacalco: grupos de 12 con coach, abierto de 5:30 a 23:00, pago mes a mes y primera clase gratis.">
+<meta name="theme-color" content="#0b0d18">
+<link rel="canonical" href="https://rig.godsplan.site/ejemplos/gimnasio.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2716%27%20fill%3D%27%230b0d18%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27900%27%20text-anchor%3D%27middle%27%20fill%3D%27%233ee6ff%27%3EF%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Forja Box y Fuerza | Clases de 12 personas, sin contratos · Iztacalco">
+<meta property="og:description" content="Gimnasio de box y fuerza en Iztacalco: grupos de 12 con coach, abierto de 5:30 a 23:00, pago mes a mes y primera clase gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* ===== Colores, tipografías y forma de este negocio (cambia esto para adaptar la página) ===== */
+:root{--bg:#0b0d18;--ink:#eef1ff;--muted:#9aa3c4;--a1:#3ee6ff;--a2:#8b5cf6;--a3:#2a3cff;--on-a:#060817;--inv-ink:#eef1ff;--glass:rgba(238,241,255,.06);--line:rgba(238,241,255,.13);--line-strong:rgba(238,241,255,.42);--edge1:rgba(62,230,255,.75);--edge2:rgba(139,92,246,.6);--spot:rgba(62,230,255,.14);--glow:rgba(100,150,255,.6);--shadow:0 20px 50px -24px rgba(0,0,0,.9);--shadow-h:0 30px 70px -22px rgba(100,130,255,.5);--r:1.4rem;--btn-r:.75rem;--font-d:'Archivo','Arial Black',sans-serif;--font-b:'Archivo',system-ui,sans-serif;--h1:clamp(2.3rem,6.2vw,4.9rem);--h-w:900;--h-ls:-.03em;--h1-lh:.96;--h-tt:uppercase;--h3-w:800;--mq-tt:uppercase;--mq-w:800;--logo-w:900;--logo-ls:.06em;--h-from:#eef1ff;--h-via:#3ee6ff;--h-to:#8b5cf6;--demo-bg:#3ee6ff;--demo-ink:#060817;--blob-o:.36;--live:#3ee6ff;--toast-bg:#eef1ff;--toast-ink:#060817}
+/* ===== Estilos base de la página ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-b);font-size:1rem;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--a1);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.ic{width:1.25em;height:1.25em;flex:none}
+
+/* Franja de ejemplo */
+.demo{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.35rem .9rem;padding:.55rem 1rem;font-size:.82rem;background:var(--demo-bg);color:var(--demo-ink);text-align:center}
+.demo a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* Navegación */
+.nav{position:sticky;top:.75rem;z-index:40;margin-top:.75rem}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem .7rem .6rem 1.1rem;border-radius:999px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
+.logo{white-space:nowrap;display:flex;align-items:center;gap:.55rem;font-family:var(--font-d);font-weight:var(--logo-w,800);font-size:1.15rem;letter-spacing:var(--logo-ls,0)}
+.logo .ic{color:var(--a1)}
+.nav-links{display:none;gap:1.6rem;font-size:.93rem;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav .btn{white-space:nowrap}
+@media(min-width:820px){.nav-links{display:flex}}
+
+/* Botones */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:var(--btn-r,999px);font-weight:700;font-size:1rem;line-height:1.1;cursor:pointer;border:0;font-family:inherit;overflow:hidden;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,background .25s,border-color .25s}
+.btn-sm{padding:.65rem 1.05rem;font-size:.9rem}
+.btn-p{background:linear-gradient(120deg,var(--a1),var(--a2));color:var(--on-a);box-shadow:0 10px 30px -8px var(--glow)}
+.btn-p::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 18px 40px -8px var(--glow)}
+.btn-p:hover::after{transform:translateX(120%)}
+.btn-g{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line-strong)}
+.btn-g:hover{background:var(--glass);box-shadow:inset 0 0 0 1.5px var(--ink);transform:translateY(-3px)}
+
+/* Hero */
+.hero{position:relative;padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,7vw,5.5rem);isolation:isolate}
+.blobs{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blobs i{position:absolute;border-radius:50%;filter:blur(90px);opacity:var(--blob-o,.55);animation:drift 18s ease-in-out infinite alternate}
+.blobs i:nth-child(1){width:46vw;height:46vw;max-width:620px;max-height:620px;left:-8%;top:-6%;background:var(--a1)}
+.blobs i:nth-child(2){width:38vw;height:38vw;max-width:520px;max-height:520px;right:-6%;top:18%;background:var(--a2);animation-duration:23s;animation-direction:alternate-reverse}
+.blobs i:nth-child(3){width:30vw;height:30vw;max-width:420px;max-height:420px;left:34%;bottom:-18%;background:var(--a3,var(--a1));animation-duration:27s}
+@keyframes drift{to{transform:translate3d(6%,8%,0) scale(1.12)}}
+.hero-grid{display:grid;gap:clamp(2.5rem,6vw,4rem);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem .4rem .7rem;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.kicker .dot{width:.55rem;height:.55rem;border-radius:50%;background:var(--live,#2fd27a);box-shadow:0 0 0 0 var(--live,#2fd27a);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 .55rem transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-family:var(--font-d);font-weight:var(--h-w,800);font-size:var(--h1);line-height:var(--h1-lh,.95);letter-spacing:var(--h-ls,-.03em);margin:1.4rem 0 1.3rem;text-wrap:balance;background:linear-gradient(115deg,var(--h-from) 20%,var(--h-via,var(--a1)) 62%,var(--h-to) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em;text-transform:var(--h-tt,none)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--muted);max-width:54ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+@media(max-width:480px){.cta-row .btn{flex:1 1 100%}}
+.facts{display:flex;flex-wrap:wrap;gap:.7rem 1.6rem;margin-top:2.2rem;font-size:.93rem;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:.45rem}
+.facts .ic{color:var(--a1)}
+.hero-art{position:relative;min-height:340px;display:grid;place-items:center}
+
+/* Entrada del hero */
+.in{animation:rise .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*110ms + 120ms)}
+@keyframes rise{from{opacity:0;transform:translateY(34px);filter:blur(6px)}}
+
+/* Vidrio */
+.glass{position:relative;background:var(--glass);border-radius:var(--r);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);box-shadow:var(--shadow)}
+.glass.solid{background:var(--solid)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(140deg,var(--edge1),transparent 38%,transparent 62%,var(--edge2));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none}
+
+/* Marquesina */
+.mq{padding:1.2rem 0 clamp(3rem,6vw,4.5rem)}
+.mq-label{text-align:center;color:var(--muted);font-size:.93rem;margin-bottom:1.3rem}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.track{display:flex;width:max-content;animation:slide var(--mq-t,38s) linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{display:flex;align-items:center;gap:1.1rem;padding-right:1.1rem;font-family:var(--font-d);font-weight:var(--mq-w,700);font-size:clamp(1.25rem,2.6vw,1.9rem);letter-spacing:var(--mq-ls,-.01em);white-space:nowrap;color:var(--mq-ink,var(--ink));opacity:.8;text-transform:var(--mq-tt,none)}
+.track .ic{width:.75em;height:.75em;color:var(--a1)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Secciones */
+.sec{padding:clamp(3rem,7vw,5.5rem) 0}
+.sec-head{max-width:46rem;margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+h2{font-family:var(--font-d);font-weight:var(--h-w,800);font-size:var(--h2,clamp(2rem,5vw,3.4rem));line-height:1.02;letter-spacing:var(--h-ls,-.03em);text-wrap:balance;text-transform:var(--h-tt,none)}
+.sec-head p{color:var(--muted);margin-top:.9rem;font-size:1.08rem;max-width:56ch}
+
+/* Bento */
+.bento{display:grid;gap:1rem;perspective:1400px}
+.card{padding:clamp(1.4rem,2.6vw,2rem);display:flex;flex-direction:column;gap:.7rem;min-height:210px;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--sc,1));transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;will-change:transform;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),var(--spot),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover{--sc:1.02;box-shadow:var(--shadow-h)}
+.card:hover::after{opacity:1}
+.card>*{position:relative;z-index:1}
+.card-ic{width:3rem;height:3rem;border-radius:calc(var(--r)*.55);display:grid;place-items:center;background:linear-gradient(135deg,var(--a1),var(--a2));color:var(--on-a);box-shadow:0 8px 22px -8px var(--glow);margin-bottom:.4rem;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.card:hover .card-ic{transform:translateY(-4px) rotate(-6deg)}
+.card-ic .ic{width:1.45rem;height:1.45rem}
+h3{font-family:var(--font-d);font-weight:var(--h3-w,700);font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.1;letter-spacing:var(--h3-ls,-.02em);text-transform:var(--h-tt,none)}
+.card p{color:var(--muted);max-width:44ch}
+.card .extra{margin-top:auto;padding-top:1rem}
+.c1{grid-area:a}.c2{grid-area:b}.c3{grid-area:c}.c4{grid-area:d}
+.bento{grid-template-areas:"a" "b" "c" "d"}
+@media(min-width:640px) and (max-width:959px){.bento{grid-template-columns:1fr 1fr;grid-template-areas:"a a" "b c" "d d"}}
+.rows{display:grid;gap:.1rem}
+.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.55rem 0;border-bottom:1px dashed var(--line)}
+.rows li:last-child{border-bottom:0}
+.rows b{font-weight:700}
+.rows span{color:var(--muted);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips li{padding:.3rem .7rem;border-radius:999px;border:1px solid var(--line);font-size:.85rem;background:var(--chip,transparent)}
+
+/* Reseñas */
+.revs{display:grid;gap:1rem}
+@media(min-width:860px){.revs{grid-template-columns:repeat(3,1fr);align-items:start}.revs .rev:nth-child(2){margin-top:2.2rem}}
+.rev{padding:1.6rem;display:flex;flex-direction:column;gap:1rem;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.rev:hover{transform:translateY(-6px)}
+.stars{display:flex;gap:.15rem;color:var(--star,var(--a1))}
+.stars .ic{width:1rem;height:1rem;fill:currentColor}
+.rev blockquote{margin:0;font-size:1.06rem;line-height:1.55}
+.who{display:flex;align-items:center;gap:.8rem;margin-top:auto}
+.av{width:2.8rem;height:2.8rem;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.95rem;color:var(--on-a);background:linear-gradient(135deg,var(--a1),var(--a2));flex:none}
+.who b{display:block;line-height:1.2}
+.who span{color:var(--muted);font-size:.88rem}
+
+/* Cierre */
+.final{padding:clamp(2rem,5vw,4rem) 0 clamp(3.5rem,7vw,6rem)}
+.final-box{position:relative;overflow:hidden;border-radius:calc(var(--r)*1.4);padding:clamp(2.2rem,6vw,4.5rem);background:linear-gradient(125deg,var(--a1),var(--a2));color:var(--on-a);isolation:isolate}
+.final-box::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 90% at 85% 10%,rgba(255,255,255,.35),transparent 60%),radial-gradient(50% 80% at 5% 100%,rgba(0,0,0,.28),transparent 60%)}
+.final-box h2{font-size:clamp(2.2rem,6vw,4.4rem);max-width:16ch}
+.final-box p{margin-top:1rem;max-width:48ch;font-size:1.1rem;opacity:.9}
+.final-box .cta-row{margin-top:1.8rem}
+.btn-inv{background:var(--on-a);color:var(--inv-ink);box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.btn-inv:hover{transform:translateY(-3px)}
+.btn-gi{background:transparent;color:var(--on-a);box-shadow:inset 0 0 0 1.5px currentColor}
+.btn-gi:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+.final-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2rem;font-size:.95rem;opacity:.92}
+.final-meta li{display:flex;align-items:center;gap:.45rem}
+
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem 2rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.foot a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+
+/* Aviso de demo */
+.toast{visibility:hidden;opacity:0;position:fixed;left:50%;bottom:1.4rem;z-index:60;transform:translate(-50%,150%);max-width:min(30rem,calc(100% - 2rem));padding:.9rem 1.2rem;border-radius:1rem;background:var(--toast-bg,#111);color:var(--toast-ink,#fff);font-size:.93rem;box-shadow:0 20px 50px -10px rgba(0,0,0,.5);transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .3s,visibility .45s}
+.toast.on{transform:translate(-50%,0);opacity:1;visibility:visible}
+.toast a{font-weight:700;text-decoration:underline}
+
+/* Aparición al hacer scroll (solo si hay JS) */
+.js [data-reveal]{opacity:0;translate:0 30px;transition:opacity .8s cubic-bezier(.2,.8,.2,1),translate .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
+.js [data-reveal].is-in{opacity:1;translate:0 0}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js [data-reveal]{opacity:1;translate:0 0}
+  .track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;row-gap:.6rem}
+  .track span[aria-hidden]{display:none}
+}
+
+/* ===== Detalles propios de este negocio ===== */
+.hero{background-image:linear-gradient(rgba(238,241,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(238,241,255,.045) 1px,transparent 1px);background-size:56px 56px}
+h1,h2,h3,.logo,.track span{font-stretch:112%}
+h1{overflow-wrap:anywhere}
+h3{font-stretch:108%}
+.board{width:100%;max-width:440px;padding:1.4rem;transform:perspective(1100px) rotateY(-9deg) rotateX(4deg);transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.board:hover{transform:perspective(1100px) rotateY(0) rotateX(0)}
+.b-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
+.b-head p{font-weight:800;font-size:1.2rem;font-stretch:112%}
+.ring{position:relative;width:4.6rem;height:4.6rem;display:grid;place-items:center}
+.ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke:var(--line);stroke-width:7}
+.ring .arc{stroke:var(--a1);stroke-linecap:round;stroke-dasharray:38 100;animation:fill 1.8s .7s cubic-bezier(.2,.8,.2,1) both;filter:drop-shadow(0 0 6px var(--a1))}
+@keyframes fill{from{stroke-dasharray:0 100}}
+.ring b{font-size:.95rem}
+.board li{display:grid;grid-template-columns:3.6rem 1fr auto;gap:.7rem;align-items:center;padding:.72rem 0;border-top:1px solid var(--line);font-size:.95rem}
+.board li b{font-weight:800;font-variant-numeric:tabular-nums}
+.board li em{font-style:normal;font-size:.8rem;padding:.2rem .6rem;border-radius:99px;background:rgba(62,230,255,.14);color:var(--a1);white-space:nowrap}
+.board .full{opacity:.5}
+.board .full em{background:rgba(238,241,255,.1);color:var(--muted)}
+@media(min-width:960px){.bento{grid-template-columns:repeat(12,1fr);grid-template-areas:"a a a a a a a b b b b b" "c c c c d d d d d d d d"}}
+.c1 h3{font-size:clamp(1.7rem,3.2vw,2.5rem)}
+.dots{display:grid;grid-template-columns:repeat(12,1fr);gap:.4rem;max-width:22rem}
+.dots i{aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2));opacity:.9}
+.dots i:nth-child(n+10){background:transparent;border:1.5px dashed var(--line-strong)}
+.cap{font-size:.86rem;color:var(--muted);margin-top:.6rem}
+</style>
+</head>
+<body>
+<!-- Página de ejemplo hecha por GodsRig · by God's Plan. El negocio y las reseñas son ficticios. -->
+<p class="demo">Sitio de ejemplo: Forja es un negocio ficticio. <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20el%20ejemplo%20de%20Forja%20en%20GodsRig%20y%20quiero%20una%20p%C3%A1gina%20as%C3%AD%20para%20mi%20negocio." target="_blank" rel="noopener">Quiero una página así para mi negocio</a></p>
+
+<header class="nav wrap">
+  <div class="nav-in">
+    <a class="logo" href="#inicio"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" /> <path d="m2.5 21.5 1.4-1.4" /> <path d="m20.1 3.9 1.4-1.4" /> <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" /> <path d="m9.6 14.4 4.8-4.8" /></svg>FORJA</a>
+    <nav class="nav-links" aria-label="Secciones"><a href="#beneficios">El método</a><a href="#opiniones">Opiniones</a><a href="#cierre">Clase gratis</a></nav>
+    <a class="btn btn-p btn-sm" href="#cierre">Agendar clase gratis</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker in" style="--i:0"><span class="dot"></span>38 personas entrenando ahora</p>
+        <h1 class="in" style="--i:1">Entrena fuerte. Sin contratos forzosos.</h1>
+        <p class="lead in" style="--i:2">Box, fuerza y acondicionamiento en grupos de 12, con un coach que corrige tu técnica en cada clase. Pagas mes a mes y cancelas cuando quieras.</p>
+        <div class="cta-row in" style="--i:3">
+          <a class="btn btn-p" href="#cierre">Agendar clase gratis<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+          <a class="btn btn-g" href="#beneficios">Ver horarios</a>
+        </div>
+        <ul class="facts in" style="--i:4"><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /></svg>Abierto de 5:30 a 23:00</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg>Desde $549 al mes</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m16 9-5.5 5.5L8 12" /></svg>Primera clase sin costo</li></ul>
+      </div>
+      <div class="hero-art in" style="--i:3">
+        <div class="board glass">
+          <div class="b-head"><p>Clases de hoy</p>
+            <div class="ring" role="img" aria-label="Aforo actual 38 por ciento"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="33"/><circle class="arc" cx="40" cy="40" r="33" pathLength="100"/></svg><b>38%</b></div></div>
+          <ul>
+            <li><b>6:00</b><span>Fuerza: sentadilla</span><em>4 lugares</em></li>
+            <li><b>7:15</b><span>Box técnico</span><em>2 lugares</em></li>
+            <li class="full"><b>18:00</b><span>Acondicionamiento</span><em>Lleno</em></li>
+            <li><b>19:15</b><span>Box con costal</span><em>7 lugares</em></li>
+            <li><b>20:30</b><span>Fuerza: peso muerto</span><em>5 lugares</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mq" aria-label="Entrenas con equipo de marcas que aguantan el uso diario">
+    <p class="mq-label" data-reveal>Entrenas con equipo de marcas que aguantan el uso diario</p>
+    <div class="marquee" data-reveal><div class="track"><span>Hierro Norte<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Kairo Barras<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Lona Roja<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Pulso Sensor<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Volt Nutrición<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Tarima 9<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span>Costal Bravo<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Hierro Norte<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Kairo Barras<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Lona Roja<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Pulso Sensor<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Volt Nutrición<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Tarima 9<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span aria-hidden="true">Costal Bravo<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span></div></div>
+  </section>
+
+  <section class="sec" id="beneficios">
+    <div class="wrap">
+      <div class="sec-head" data-reveal><h2>Un gimnasio pensado para que sí vuelvas</h2><p>La mayoría deja el gimnasio al tercer mes. Aquí cambiamos las cuatro razones por las que pasa.</p></div>
+      <div class="bento">
+<article class="card glass c1" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /></svg></div><h3>Grupos de 12, no de 40</h3><p>El coach te conoce por tu nombre, sabe cuánto cargaste la semana pasada y te corrige antes de que te lastimes.</p><div class="extra"><div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="cap">9 de 12 lugares ocupados en la clase de las 19:15</p></div></article>
+<article class="card glass c2" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" /> <path d="m2.5 21.5 1.4-1.4" /> <path d="m20.1 3.9 1.4-1.4" /> <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" /> <path d="m9.6 14.4 4.8-4.8" /></svg></div><h3>Fuerza con programa</h3><p>Ciclos de ocho semanas con tus cargas anotadas. Ves tu avance en números, no a ojo.</p></article>
+<article class="card glass c3" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 4 2.5 2.5" /> <path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" /> <path d="M15 5 5 15" /> <path d="M14 17v.01" /> <path d="M10 16v.01" /> <path d="M13 13v.01" /> <path d="M16 10v.01" /> <path d="M11 20v.01" /> <path d="M17 14v.01" /> <path d="M20 11v.01" /></svg></div><h3>Regaderas y lockers</h3><p>Agua caliente a cualquier hora, lockers con candado y toalla incluida.</p></article>
+<article class="card glass c4" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></div><h3>Pagas mes a mes</h3><p>Sin inscripción ni plazos forzosos. Congela tu plan hasta 30 días al año.</p><div class="extra"><ul class="rows"><li><b>Mensual ilimitado</b><span>$549</span></li><li><b>Trimestre</b><span>$1,490</span></li><li><b>Clase suelta</b><span>$90</span></li></ul></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="opiniones">
+    <div class="wrap">
+      <div class="sec-head" data-reveal><h2>Resultados contados por quienes los cargan</h2><p>Socios con más de seis meses entrenando.</p></div>
+      <div class="revs">
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>Entré sin saber hacer una sentadilla. Hoy cargo 70 kilos y no me ha dolido la espalda ni una vez.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">AS</span><span><b>Andrea Solís</b><span>Socia desde hace 11 meses</span></span></figcaption></figure>
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>Lo que me hizo quedarme fue poder cancelar cuando quisiera. Llevo un año y no he cancelado.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">MT</span><span><b>Marco Téllez</b><span>Clase de las 6:00</span></span></figcaption></figure>
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>En la clase de box somos diez y el coach nos corrige la guardia a todos. Eso no pasa en una cadena.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">FR</span><span><b>Fernanda Ríos</b><span>Box tres veces por semana</span></span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="cierre">
+    <div class="wrap">
+      <div class="final-box" data-reveal>
+        <h2>Tu primera clase va por nuestra cuenta.</h2>
+        <p>Elige horario, llega 10 minutos antes y trae ropa cómoda. Los guantes los ponemos nosotros.</p>
+        <div class="cta-row">
+          <a class="btn btn-inv" href="#" data-demo>Agendar clase gratis<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+          <a class="btn btn-gi" href="#" data-demo>Ver planes y precios</a>
+        </div>
+        <ul class="final-meta"><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Av. Río Frío 1420, Iztacalco, CDMX</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /></svg>Lunes a sábado, 5:30 a 23:00</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>55 0000 1420</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="foot">
+    <p>Forja es un negocio ficticio creado como muestra de diseño.</p>
+    <p>Hecho por <a href="https://rig.godsplan.site/">GodsRig</a> · by <a href="https://godsplan.site/">God's Plan</a> · <a href="index.html">Ver más ejemplos</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Esto es un ejemplo. En tu página, este botón abriría el WhatsApp o las reservas de tu negocio. <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20el%20ejemplo%20de%20Forja%20en%20GodsRig%20y%20quiero%20una%20p%C3%A1gina%20as%C3%AD%20para%20mi%20negocio." target="_blank" rel="noopener">Pide la tuya</a></div>
+
+<script>
+(function(){
+  var d=document,root=d.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Aparición escalonada al entrar a la pantalla
+  var els=[].slice.call(d.querySelectorAll('[data-reveal]'));
+  els.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){return c.hasAttribute('data-reveal')});
+    el.style.setProperty('--d',(sib.indexOf(el)*110)+'ms');
+  });
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('is-in')})}
+  // Inclinación 3D de las tarjetas (solo con mouse)
+  if(!reduce&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+    d.querySelectorAll('[data-tilt]').forEach(function(el){
+      el.addEventListener('pointermove',function(e){
+        var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+        el.style.setProperty('--ry',((x-.5)*9).toFixed(2)+'deg');
+        el.style.setProperty('--rx',((.5-y)*9).toFixed(2)+'deg');
+        el.style.setProperty('--mx',(x*100).toFixed(1)+'%');
+        el.style.setProperty('--my',(y*100).toFixed(1)+'%');
+      });
+      el.addEventListener('pointerleave',function(){el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg')});
+    });
+  }
+  // Botones de demostración: avisan que es un ejemplo
+  var t=d.getElementById('toast'),timer;
+  d.querySelectorAll('[data-demo]').forEach(function(b){
+    b.addEventListener('click',function(e){e.preventDefault();t.classList.add('on');clearTimeout(timer);timer=setTimeout(function(){t.classList.remove('on')},5200)});
+  });
+})();
+</script>
+</body>
+</html>

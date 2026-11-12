@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de páginas web para negocios | GodsRig · by God's Plan</title>
+    <meta name="description" content="Mira ejemplos de páginas web para negocios hechas por GodsRig: cafetería, taquería, barbería y gimnasio. Diseño a medida, animado y listo para celular.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainBg: '#0a0a0a',
+                        pureBlack: '#000000',
+                        bloodRed: '#8a0303',
+                        pastelRed: '#ffb3b3',
+                        lightText: '#f3f4f6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #f3f4f6; overflow-x: hidden; }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(138, 3, 3, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(138, 3, 3, 0.05) 1px, transparent 1px);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #8a0303; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ffb3b3; }
+
+        /* Vista previa de cada ejemplo */
+        .thumb { position: relative; aspect-ratio: 16 / 10; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; }
+        .thumb::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%; filter: blur(50px); left: -15%; top: -35%; background: var(--a1); opacity: .55; transition: transform .6s ease; }
+        .thumb::after { content: ""; position: absolute; width: 60%; aspect-ratio: 1; border-radius: 50%; filter: blur(50px); right: -15%; bottom: -45%; background: var(--a2); opacity: .55; transition: transform .6s ease; }
+        .ej:hover .thumb::before { transform: translate(12%, 12%) scale(1.15); }
+        .ej:hover .thumb::after { transform: translate(-12%, -12%) scale(1.15); }
+        .thumb b { position: relative; z-index: 1; font-size: clamp(1.5rem, 4vw, 2.1rem); line-height: 1; font-weight: 900; background: linear-gradient(110deg, var(--ink) 25%, var(--a1) 65%, var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .1em; }
+        .thumb span { position: relative; z-index: 1; font-size: .85rem; color: var(--ink); opacity: .75; margin-top: .35rem; }
+    </style>
+    <link rel="canonical" href="https://rig.godsplan.site/ejemplos/">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230a0a0a'/%3E%3Cpath%20d='M28%2010h8v16h16v8H36v22h-8V34H12v-8h16z'%20fill='%238a0303'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="GodsRig · by God's Plan">
+    <meta property="og:title" content="Ejemplos de páginas web para negocios | GodsRig">
+    <meta property="og:description" content="Cafetería, taquería, barbería y gimnasio: mira cómo se vería la página de tu negocio.">
+    <meta property="og:url" content="https://rig.godsplan.site/ejemplos/">
+</head>
+<body class="flex flex-col min-h-screen selection:bg-bloodRed selection:text-white antialiased">
+
+    <header class="fixed w-full top-0 z-50 bg-mainBg/80 backdrop-blur-lg border-b border-bloodRed/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex justify-between items-center">
+            <a href="../index.html" class="font-display text-xl md:text-2xl font-black tracking-widest text-pastelRed uppercase flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Gods<span class="text-white">Rig</span></span>
+            </a>
+            <div class="flex items-center gap-4 md:gap-6">
+                <a href="https://godsplan.site" class="hidden md:inline text-xs text-gray-500 hover:text-pastelRed transition-colors">by God's Plan</a>
+                <a href="../catalogo.html" class="hidden sm:inline text-sm md:text-base font-bold text-gray-300 hover:text-pastelRed transition-colors uppercase tracking-wide">Catálogo</a>
+                <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20los%20ejemplos%20de%20p%C3%A1ginas%20web%20en%20GodsRig%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 bg-bloodRed text-white font-bold rounded hover:bg-pastelRed hover:text-pureBlack transition-colors duration-300 shadow-[0_0_10px_rgba(138,3,3,0.5)]">
+                    <span>Cotizar mi web</span>
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16 md:pt-20">
+        <section class="relative px-4 sm:px-6 py-16 md:py-24 bg-grid overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-bloodRed/20 rounded-full blur-[80px] pointer-events-none"></div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
+                <h1 class="font-display text-4xl sm:text-5xl md:text-7xl font-black text-lightText mb-4 uppercase tracking-tighter leading-[1.1]">
+                    Páginas web
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-bloodRed to-pastelRed">para tu negocio.</span>
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Estos son ejemplos de lo que podemos hacer. Los negocios son inventados, pero el diseño es real: ábrelos en tu celular y en tu computadora, y dinos cuál te gusta para el tuyo.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 px-4 sm:px-6 bg-pureBlack border-y border-bloodRed/10">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+                <a href="cafeteria.html" class="ej group block rounded-xl overflow-hidden border border-bloodRed/20 hover:border-pastelRed transition-colors duration-300 bg-mainBg">
+                    <div class="thumb" style="background:#0c1512;--a1:#f0b45a;--a2:#d8553a;--ink:#f3ecdf">
+                        <b>Niebla Café</b><span>Café de altura, tostado esta semana.</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <h2 class="font-display text-lg font-bold uppercase text-lightText">Cafetería</h2>
+                            <p class="text-sm text-gray-400">Estilo cálido y elegante, con la carta y el tueste de la semana.</p>
+                        </div>
+                        <span class="shrink-0 text-pastelRed font-bold text-sm uppercase group-hover:translate-x-1 transition-transform">Ver <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+
+                <a href="taqueria.html" class="ej group block rounded-xl overflow-hidden border border-bloodRed/20 hover:border-pastelRed transition-colors duration-300 bg-mainBg">
+                    <div class="thumb" style="background:#1c0b2b;--a1:#ffb800;--a2:#ff2e7e;--ink:#fff4e0">
+                        <b>El Trompo de Oro</b><span>Al pastor recién cortado, hasta las 3 am.</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <h2 class="font-display text-lg font-bold uppercase text-lightText">Taquería</h2>
+                            <p class="text-sm text-gray-400">Colores encendidos, pedidos por WhatsApp y paquetes para fiesta.</p>
+                        </div>
+                        <span class="shrink-0 text-pastelRed font-bold text-sm uppercase group-hover:translate-x-1 transition-transform">Ver <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+
+                <a href="barberia.html" class="ej group block rounded-xl overflow-hidden border border-bloodRed/20 hover:border-pastelRed transition-colors duration-300 bg-mainBg">
+                    <div class="thumb" style="background:#e8edf3;--a1:#d7263d;--a2:#2748b8;--ink:#0f1a2e">
+                        <b class="uppercase">Navaja Fina</b><span>Corte, barba y navaja, sin hacer fila.</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <h2 class="font-display text-lg font-bold uppercase text-lightText">Barbería</h2>
+                            <p class="text-sm text-gray-400">Diseño claro, turnos del día y lista de precios a la vista.</p>
+                        </div>
+                        <span class="shrink-0 text-pastelRed font-bold text-sm uppercase group-hover:translate-x-1 transition-transform">Ver <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+
+                <a href="gimnasio.html" class="ej group block rounded-xl overflow-hidden border border-bloodRed/20 hover:border-pastelRed transition-colors duration-300 bg-mainBg">
+                    <div class="thumb" style="background:#0b0d18;--a1:#3ee6ff;--a2:#8b5cf6;--ink:#eef1ff">
+                        <b class="uppercase">Forja</b><span>Entrena fuerte. Sin contratos forzosos.</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <h2 class="font-display text-lg font-bold uppercase text-lightText">Gimnasio</h2>
+                            <p class="text-sm text-gray-400">Look tecnológico, horario de clases y planes mes a mes.</p>
+                        </div>
+                        <span class="shrink-0 text-pastelRed font-bold text-sm uppercase group-hover:translate-x-1 transition-transform">Ver <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 px-4 sm:px-6 bg-grid">
+            <div class="max-w-2xl mx-auto bg-mainBg border border-bloodRed/30 p-8 md:p-12 rounded-xl text-center relative overflow-hidden shadow-[0_0_30px_rgba(138,3,3,0.1)]">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-bloodRed/20 blur-[40px]"></div>
+                <h2 class="font-display text-2xl md:text-4xl font-black uppercase mb-4 relative z-10">¿Tu negocio es de otro giro?</h2>
+                <p class="text-gray-400 mb-8 relative z-10 text-sm md:text-base">Hacemos la página con tus colores, tus fotos, tus precios y tu WhatsApp. Cuéntanos qué vendes y te mandamos una propuesta.</p>
+                <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20los%20ejemplos%20de%20p%C3%A1ginas%20web%20en%20GodsRig%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="relative z-10 w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded font-bold hover:bg-white hover:text-[#25D366] transition-all duration-300 shadow-[0_4px_15px_rgba(37,211,102,0.3)]">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Cotizar mi página
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pureBlack border-t border-bloodRed/30 py-10 px-4 mt-auto">
+        <div class="max-w-5xl mx-auto flex flex-col items-center gap-5 text-center">
+            <a href="../index.html" class="font-display text-lg font-black tracking-widest text-pastelRed uppercase flex items-center gap-2">
+                <i class="fa-solid fa-microchip"></i> Gods<span class="text-white">Rig</span>
+            </a>
+            <p class="text-gray-500 text-xs">GodsRig es un proyecto de <a href="https://godsplan.site" class="text-pastelRed hover:text-white transition-colors">God's Plan</a>, agencia de proyectos.</p>
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500" aria-label="Pie de página">
+                <a href="../index.html" class="hover:text-pastelRed transition-colors">Inicio</a>
+                <a href="../catalogo.html" class="hover:text-pastelRed transition-colors">Catálogo</a>
+                <a href="https://godsplan.site" class="hover:text-pastelRed transition-colors">God's Plan</a>
+                <a href="https://godsplan.site/privacidad.html" class="hover:text-pastelRed transition-colors">Aviso de privacidad</a>
+                <a href="https://godsplan.site/tyc.html" class="hover:text-pastelRed transition-colors">Términos y condiciones</a>
+                <a href="mailto:contacto@godsplan.site" class="hover:text-pastelRed transition-colors">contacto@godsplan.site</a>
+            </nav>
+            <p class="text-gray-600 text-xs">&copy; 2026 GodsRig · by God's Plan · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

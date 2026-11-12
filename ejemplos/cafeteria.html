@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niebla Café | Café de altura tostado cada semana · Roma Norte</title>
+<meta name="description" content="Cafetería de especialidad en la Roma Norte: grano de Coatepec tostado cada lunes, pan horneado a las 6:00 y mesas para trabajar.">
+<meta name="theme-color" content="#0c1512">
+<link rel="canonical" href="https://rig.godsplan.site/ejemplos/cafeteria.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2716%27%20fill%3D%27%230c1512%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27900%27%20text-anchor%3D%27middle%27%20fill%3D%27%23f0b45a%27%3EN%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Niebla Café | Café de altura tostado cada semana · Roma Norte">
+<meta property="og:description" content="Cafetería de especialidad en la Roma Norte: grano de Coatepec tostado cada lunes, pan horneado a las 6:00 y mesas para trabajar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500..900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* ===== Colores, tipografías y forma de este negocio (cambia esto para adaptar la página) ===== */
+:root{--bg:#0c1512;--ink:#f3ecdf;--muted:#a9b3a6;--a1:#f0b45a;--a2:#d8553a;--a3:#1f6b55;--on-a:#1a0f06;--inv-ink:#f3ecdf;--glass:rgba(243,236,223,.07);--line:rgba(243,236,223,.14);--line-strong:rgba(243,236,223,.4);--edge1:rgba(240,180,90,.7);--edge2:rgba(216,85,58,.45);--spot:rgba(240,180,90,.16);--glow:rgba(240,150,70,.6);--shadow:0 20px 50px -24px rgba(0,0,0,.8);--shadow-h:0 30px 70px -24px rgba(240,150,70,.35);--r:1.6rem;--font-d:'Fraunces',Georgia,serif;--font-b:'Figtree',system-ui,sans-serif;--h1:clamp(3rem,8.4vw,6.6rem);--h-w:700;--h-ls:-.035em;--h-from:#f3ecdf;--h-via:#f0b45a;--h-to:#d8553a;--demo-bg:#f0b45a;--demo-ink:#1a0f06;--blob-o:.34;--solid:rgba(20,32,27,.82);--toast-bg:#f3ecdf;--toast-ink:#1a0f06}
+/* ===== Estilos base de la página ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-b);font-size:1rem;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--a1);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.ic{width:1.25em;height:1.25em;flex:none}
+
+/* Franja de ejemplo */
+.demo{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.35rem .9rem;padding:.55rem 1rem;font-size:.82rem;background:var(--demo-bg);color:var(--demo-ink);text-align:center}
+.demo a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* Navegación */
+.nav{position:sticky;top:.75rem;z-index:40;margin-top:.75rem}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem .7rem .6rem 1.1rem;border-radius:999px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
+.logo{white-space:nowrap;display:flex;align-items:center;gap:.55rem;font-family:var(--font-d);font-weight:var(--logo-w,800);font-size:1.15rem;letter-spacing:var(--logo-ls,0)}
+.logo .ic{color:var(--a1)}
+.nav-links{display:none;gap:1.6rem;font-size:.93rem;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav .btn{white-space:nowrap}
+@media(min-width:820px){.nav-links{display:flex}}
+
+/* Botones */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:var(--btn-r,999px);font-weight:700;font-size:1rem;line-height:1.1;cursor:pointer;border:0;font-family:inherit;overflow:hidden;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,background .25s,border-color .25s}
+.btn-sm{padding:.65rem 1.05rem;font-size:.9rem}
+.btn-p{background:linear-gradient(120deg,var(--a1),var(--a2));color:var(--on-a);box-shadow:0 10px 30px -8px var(--glow)}
+.btn-p::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 18px 40px -8px var(--glow)}
+.btn-p:hover::after{transform:translateX(120%)}
+.btn-g{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line-strong)}
+.btn-g:hover{background:var(--glass);box-shadow:inset 0 0 0 1.5px var(--ink);transform:translateY(-3px)}
+
+/* Hero */
+.hero{position:relative;padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,7vw,5.5rem);isolation:isolate}
+.blobs{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blobs i{position:absolute;border-radius:50%;filter:blur(90px);opacity:var(--blob-o,.55);animation:drift 18s ease-in-out infinite alternate}
+.blobs i:nth-child(1){width:46vw;height:46vw;max-width:620px;max-height:620px;left:-8%;top:-6%;background:var(--a1)}
+.blobs i:nth-child(2){width:38vw;height:38vw;max-width:520px;max-height:520px;right:-6%;top:18%;background:var(--a2);animation-duration:23s;animation-direction:alternate-reverse}
+.blobs i:nth-child(3){width:30vw;height:30vw;max-width:420px;max-height:420px;left:34%;bottom:-18%;background:var(--a3,var(--a1));animation-duration:27s}
+@keyframes drift{to{transform:translate3d(6%,8%,0) scale(1.12)}}
+.hero-grid{display:grid;gap:clamp(2.5rem,6vw,4rem);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem .4rem .7rem;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:.88rem;font-weight:600;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.kicker .dot{width:.55rem;height:.55rem;border-radius:50%;background:var(--live,#2fd27a);box-shadow:0 0 0 0 var(--live,#2fd27a);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 .55rem transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-family:var(--font-d);font-weight:var(--h-w,800);font-size:var(--h1);line-height:var(--h1-lh,.95);letter-spacing:var(--h-ls,-.03em);margin:1.4rem 0 1.3rem;text-wrap:balance;background:linear-gradient(115deg,var(--h-from) 20%,var(--h-via,var(--a1)) 62%,var(--h-to) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em;text-transform:var(--h-tt,none)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--muted);max-width:54ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+@media(max-width:480px){.cta-row .btn{flex:1 1 100%}}
+.facts{display:flex;flex-wrap:wrap;gap:.7rem 1.6rem;margin-top:2.2rem;font-size:.93rem;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:.45rem}
+.facts .ic{color:var(--a1)}
+.hero-art{position:relative;min-height:340px;display:grid;place-items:center}
+
+/* Entrada del hero */
+.in{animation:rise .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*110ms + 120ms)}
+@keyframes rise{from{opacity:0;transform:translateY(34px);filter:blur(6px)}}
+
+/* Vidrio */
+.glass{position:relative;background:var(--glass);border-radius:var(--r);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);box-shadow:var(--shadow)}
+.glass.solid{background:var(--solid)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(140deg,var(--edge1),transparent 38%,transparent 62%,var(--edge2));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none}
+
+/* Marquesina */
+.mq{padding:1.2rem 0 clamp(3rem,6vw,4.5rem)}
+.mq-label{text-align:center;color:var(--muted);font-size:.93rem;margin-bottom:1.3rem}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.track{display:flex;width:max-content;animation:slide var(--mq-t,38s) linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{display:flex;align-items:center;gap:1.1rem;padding-right:1.1rem;font-family:var(--font-d);font-weight:var(--mq-w,700);font-size:clamp(1.25rem,2.6vw,1.9rem);letter-spacing:var(--mq-ls,-.01em);white-space:nowrap;color:var(--mq-ink,var(--ink));opacity:.8;text-transform:var(--mq-tt,none)}
+.track .ic{width:.75em;height:.75em;color:var(--a1)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Secciones */
+.sec{padding:clamp(3rem,7vw,5.5rem) 0}
+.sec-head{max-width:46rem;margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+h2{font-family:var(--font-d);font-weight:var(--h-w,800);font-size:var(--h2,clamp(2rem,5vw,3.4rem));line-height:1.02;letter-spacing:var(--h-ls,-.03em);text-wrap:balance;text-transform:var(--h-tt,none)}
+.sec-head p{color:var(--muted);margin-top:.9rem;font-size:1.08rem;max-width:56ch}
+
+/* Bento */
+.bento{display:grid;gap:1rem;perspective:1400px}
+.card{padding:clamp(1.4rem,2.6vw,2rem);display:flex;flex-direction:column;gap:.7rem;min-height:210px;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--sc,1));transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;will-change:transform;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),var(--spot),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover{--sc:1.02;box-shadow:var(--shadow-h)}
+.card:hover::after{opacity:1}
+.card>*{position:relative;z-index:1}
+.card-ic{width:3rem;height:3rem;border-radius:calc(var(--r)*.55);display:grid;place-items:center;background:linear-gradient(135deg,var(--a1),var(--a2));color:var(--on-a);box-shadow:0 8px 22px -8px var(--glow);margin-bottom:.4rem;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.card:hover .card-ic{transform:translateY(-4px) rotate(-6deg)}
+.card-ic .ic{width:1.45rem;height:1.45rem}
+h3{font-family:var(--font-d);font-weight:var(--h3-w,700);font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.1;letter-spacing:var(--h3-ls,-.02em);text-transform:var(--h-tt,none)}
+.card p{color:var(--muted);max-width:44ch}
+.card .extra{margin-top:auto;padding-top:1rem}
+.c1{grid-area:a}.c2{grid-area:b}.c3{grid-area:c}.c4{grid-area:d}
+.bento{grid-template-areas:"a" "b" "c" "d"}
+@media(min-width:640px) and (max-width:959px){.bento{grid-template-columns:1fr 1fr;grid-template-areas:"a a" "b c" "d d"}}
+.rows{display:grid;gap:.1rem}
+.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.55rem 0;border-bottom:1px dashed var(--line)}
+.rows li:last-child{border-bottom:0}
+.rows b{font-weight:700}
+.rows span{color:var(--muted);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips li{padding:.3rem .7rem;border-radius:999px;border:1px solid var(--line);font-size:.85rem;background:var(--chip,transparent)}
+
+/* Reseñas */
+.revs{display:grid;gap:1rem}
+@media(min-width:860px){.revs{grid-template-columns:repeat(3,1fr);align-items:start}.revs .rev:nth-child(2){margin-top:2.2rem}}
+.rev{padding:1.6rem;display:flex;flex-direction:column;gap:1rem;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.rev:hover{transform:translateY(-6px)}
+.stars{display:flex;gap:.15rem;color:var(--star,var(--a1))}
+.stars .ic{width:1rem;height:1rem;fill:currentColor}
+.rev blockquote{margin:0;font-size:1.06rem;line-height:1.55}
+.who{display:flex;align-items:center;gap:.8rem;margin-top:auto}
+.av{width:2.8rem;height:2.8rem;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.95rem;color:var(--on-a);background:linear-gradient(135deg,var(--a1),var(--a2));flex:none}
+.who b{display:block;line-height:1.2}
+.who span{color:var(--muted);font-size:.88rem}
+
+/* Cierre */
+.final{padding:clamp(2rem,5vw,4rem) 0 clamp(3.5rem,7vw,6rem)}
+.final-box{position:relative;overflow:hidden;border-radius:calc(var(--r)*1.4);padding:clamp(2.2rem,6vw,4.5rem);background:linear-gradient(125deg,var(--a1),var(--a2));color:var(--on-a);isolation:isolate}
+.final-box::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 90% at 85% 10%,rgba(255,255,255,.35),transparent 60%),radial-gradient(50% 80% at 5% 100%,rgba(0,0,0,.28),transparent 60%)}
+.final-box h2{font-size:clamp(2.2rem,6vw,4.4rem);max-width:16ch}
+.final-box p{margin-top:1rem;max-width:48ch;font-size:1.1rem;opacity:.9}
+.final-box .cta-row{margin-top:1.8rem}
+.btn-inv{background:var(--on-a);color:var(--inv-ink);box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.btn-inv:hover{transform:translateY(-3px)}
+.btn-gi{background:transparent;color:var(--on-a);box-shadow:inset 0 0 0 1.5px currentColor}
+.btn-gi:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+.final-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2rem;font-size:.95rem;opacity:.92}
+.final-meta li{display:flex;align-items:center;gap:.45rem}
+
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem 2rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.foot a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+
+/* Aviso de demo */
+.toast{visibility:hidden;opacity:0;position:fixed;left:50%;bottom:1.4rem;z-index:60;transform:translate(-50%,150%);max-width:min(30rem,calc(100% - 2rem));padding:.9rem 1.2rem;border-radius:1rem;background:var(--toast-bg,#111);color:var(--toast-ink,#fff);font-size:.93rem;box-shadow:0 20px 50px -10px rgba(0,0,0,.5);transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .3s,visibility .45s}
+.toast.on{transform:translate(-50%,0);opacity:1;visibility:visible}
+.toast a{font-weight:700;text-decoration:underline}
+
+/* Aparición al hacer scroll (solo si hay JS) */
+.js [data-reveal]{opacity:0;translate:0 30px;transition:opacity .8s cubic-bezier(.2,.8,.2,1),translate .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
+.js [data-reveal].is-in{opacity:1;translate:0 0}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js [data-reveal]{opacity:1;translate:0 0}
+  .track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;row-gap:.6rem}
+  .track span[aria-hidden]{display:none}
+}
+
+/* ===== Detalles propios de este negocio ===== */
+.hero-art{min-height:420px}
+.cup{position:relative;width:min(78%,330px);aspect-ratio:1;margin:0 auto 0 0}
+.saucer{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fbf6ec,#d9cdb8 70%,#b7a98f);box-shadow:0 40px 80px -30px rgba(0,0,0,.9),inset 0 -8px 20px rgba(0,0,0,.18)}
+.mug{position:absolute;inset:17%;border-radius:50%;background:#f7f1e6;box-shadow:inset 0 0 0 10px #efe6d6,0 10px 24px rgba(0,0,0,.35)}
+.crema{position:absolute;inset:11%;border-radius:50%;background:conic-gradient(from 0deg,#6b3a1c,#c98a4b 18%,#f4dcb8 26%,#b8713a 40%,#6b3a1c 55%,#d9a56a 70%,#f4dcb8 78%,#8a4d25 90%,#6b3a1c);animation:swirl 26s linear infinite;box-shadow:inset 0 0 26px rgba(60,25,8,.75)}
+.handle{position:absolute;right:-3%;top:41%;width:22%;height:18%;border-radius:0 999px 999px 0;border:12px solid #f1e9da;border-left:0;box-shadow:6px 10px 16px rgba(0,0,0,.3)}
+@keyframes swirl{to{transform:rotate(360deg)}}
+.steam{position:absolute;left:24%;top:-20%;width:52%;color:rgba(243,236,223,.4);filter:blur(5px);animation:steam 5s ease-in-out infinite}
+@keyframes steam{0%{opacity:0;transform:translateY(16px) scaleY(.9)}40%{opacity:1}100%{opacity:0;transform:translateY(-22px) scaleY(1.12)}}
+.ticket{position:absolute;right:0;bottom:0;width:min(74%,300px);padding:1.25rem;display:grid;gap:.55rem;transform:rotate(3deg);animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:rotate(1.5deg) translateY(-10px)}}
+.t-top{display:flex;align-items:center;gap:.45rem;font-size:.85rem;color:var(--a1);font-weight:700}
+.t-name{font-family:var(--font-d);font-size:1.55rem;font-weight:700;line-height:1.1}
+.t-sub{font-size:.86rem;color:var(--muted)}
+.roast{display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--muted);margin-top:.3rem}
+.bar{flex:1;height:.45rem;border-radius:9px;background:linear-gradient(90deg,#e7c08a,#8a4d25,#2a140a);position:relative}
+.bar i{position:absolute;left:38%;top:50%;width:1rem;height:1rem;border-radius:50%;background:#fff;border:3px solid var(--a2);transform:translate(-50%,-50%)}
+@media(min-width:960px){.bento{grid-template-columns:repeat(6,1fr);grid-template-areas:"a a a a b b" "a a a a c c" "d d d d d d"}.c1{min-height:440px}.c4{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:2rem;min-height:0}.c4 .card-ic{margin:0}.c4 h3{flex:0 0 auto}.c4 p{flex:1 1 16rem}.c4 .extra{flex:1 1 100%;margin:0;padding-top:.6rem}.c4 .rows{grid-template-columns:repeat(4,1fr);gap:1.5rem}.c4 .rows li{border-bottom:0;flex-direction:column;gap:.1rem;border-left:1px dashed var(--line);padding:.2rem 0 .2rem 1.2rem}}
+.c1 h3{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+</style>
+</head>
+<body>
+<!-- Página de ejemplo hecha por GodsRig · by God's Plan. El negocio y las reseñas son ficticios. -->
+<p class="demo">Sitio de ejemplo: Niebla Café es un negocio ficticio. <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20el%20ejemplo%20de%20Niebla%20Caf%C3%A9%20en%20GodsRig%20y%20quiero%20una%20p%C3%A1gina%20as%C3%AD%20para%20mi%20negocio." target="_blank" rel="noopener">Quiero una página así para mi negocio</a></p>
+
+<header class="nav wrap">
+  <div class="nav-in">
+    <a class="logo" href="#inicio"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2" /> <path d="M14 2v2" /> <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /> <path d="M6 2v2" /></svg>Niebla Café</a>
+    <nav class="nav-links" aria-label="Secciones"><a href="#beneficios">La casa</a><a href="#opiniones">Opiniones</a><a href="#cierre">Visítanos</a></nav>
+    <a class="btn btn-p btn-sm" href="#cierre">Reservar mesa</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker in" style="--i:0"><span class="dot"></span>Abierto hoy de 7:30 a 21:00</p>
+        <h1 class="in" style="--i:1">Café de altura, tostado esta semana.</h1>
+        <p class="lead in" style="--i:2">Compramos el grano directo a tres fincas de Coatepec y lo tostamos cada lunes en la barra. Lo que tomas hoy se tostó hace menos de siete días.</p>
+        <div class="cta-row in" style="--i:3">
+          <a class="btn btn-p" href="#cierre">Reservar mesa<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+          <a class="btn btn-g" href="#beneficios">Ver la carta</a>
+        </div>
+        <ul class="facts in" style="--i:4"><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>4.9 en 1,280 reseñas</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Orizaba 148, Roma Norte</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01" /> <path d="M2 8.82a15 15 0 0 1 20 0" /> <path d="M5 12.859a10 10 0 0 1 14 0" /> <path d="M8.5 16.429a5 5 0 0 1 7 0" /></svg>Wifi y enchufes en cada mesa</li></ul>
+      </div>
+      <div class="hero-art in" style="--i:3">
+        <div class="cup" aria-hidden="true"><div class="saucer"><div class="mug"><div class="crema"></div></div><div class="handle"></div></div>
+          <svg class="steam" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M35 105c-14-18 14-30 0-50s14-30 0-48"/><path d="M62 110c-14-18 14-32 0-52s14-30 0-50"/><path d="M89 105c-14-18 14-30 0-50s14-30 0-48"/></svg></div>
+        <div class="ticket glass solid">
+          <p class="t-top"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg>Tueste de la semana</p>
+          <p class="t-name">Finca La Niebla</p>
+          <p class="t-sub">Coatepec, Veracruz · 1,450 m · lavado</p>
+          <ul class="chips"><li>Piloncillo</li><li>Mandarina</li><li>Cacao</li></ul>
+          <div class="roast"><span>Claro</span><div class="bar"><i></i></div><span>Oscuro</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mq" aria-label="Nuestro grano, pan y leche vienen de productores con nombre">
+    <p class="mq-label" data-reveal>Nuestro grano, pan y leche vienen de productores con nombre</p>
+    <div class="marquee" data-reveal><div class="track"><span>Finca La Niebla<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Tostadores Cumbre<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Lechería Santa Rita<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Horno Masa Madre<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Cacao Tzotzil<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Miel Don Aurelio<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span>Cerámica Barro Azul<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Finca La Niebla<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Tostadores Cumbre<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Lechería Santa Rita<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Horno Masa Madre<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Cacao Tzotzil<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Miel Don Aurelio<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span><span aria-hidden="true">Cerámica Barro Azul<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></span></div></div>
+  </section>
+
+  <section class="sec" id="beneficios">
+    <div class="wrap">
+      <div class="sec-head" data-reveal><h2>Por qué la gente vuelve cada mañana</h2><p>No es solo el café. Es saber de dónde viene, que el pan salió hoy y que nadie te va a apurar.</p></div>
+      <div class="bento">
+<article class="card glass c1" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z" /> <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28" /></svg></div><h3>Grano con nombre y apellido</h3><p>Cada bolsa dice quién lo cultivó, a qué altura creció y qué día se tostó. Si te gusta, te lo llevas a casa molido a tu medida.</p><div class="extra"><ul class="rows"><li><b>Finca La Niebla</b><span>1,450 m · lavado</span></li><li><b>El Mirador</b><span>1,320 m · natural</span></li><li><b>Doña Eulalia</b><span>1,600 m · honey</span></li></ul></div></article>
+<article class="card glass c2" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 18H4.774a1.5 1.5 0 0 1-1.352-.97 11 11 0 0 1 .132-6.487" /> <path d="M18 10.2V4.774a1.5 1.5 0 0 0-.97-1.352 11 11 0 0 0-6.486.132" /> <path d="M18 5a4 3 0 0 1 4 3 2 2 0 0 1-2 2 10 10 0 0 0-5.139 1.42" /> <path d="M5 18a3 4 0 0 0 3 4 2 2 0 0 0 2-2 10 10 0 0 1 1.42-5.14" /> <path d="M8.709 2.554a10 10 0 0 0-6.155 6.155 1.5 1.5 0 0 0 .676 1.626l9.807 5.42a2 2 0 0 0 2.718-2.718l-5.42-9.807a1.5 1.5 0 0 0-1.626-.676" /></svg></div><h3>Pan horneado a las 6:00</h3><p>Concha de mantequilla, rol de cardamomo y croissant. Sale una sola horneada al día y se acaba.</p></article>
+<article class="card glass c3" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" /> <path d="M20.054 15.987H3.946" /></svg></div><h3>Mesas para trabajar</h3><p>Wifi de 300 megas, enchufe en cada mesa y un segundo piso en silencio.</p></article>
+<article class="card glass c4" data-tilt data-reveal><div class="card-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2" /> <path d="M14 2v2" /> <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /> <path d="M6 2v2" /></svg></div><h3>Una carta corta</h3><p>Pocas bebidas, bien hechas. Leche de avena o almendra sin costo extra.</p><div class="extra"><ul class="rows"><li><b>Espresso</b><span>$45</span></li><li><b>Flat white</b><span>$68</span></li><li><b>V60 de finca</b><span>$85</span></li><li><b>Cold brew 18 h</b><span>$72</span></li></ul></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="opiniones">
+    <div class="wrap">
+      <div class="sec-head" data-reveal><h2>Lo que dicen en la barra</h2><p>Reseñas de clientes que vienen cada semana.</p></div>
+      <div class="revs">
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>El V60 de La Niebla sabe a mandarina de verdad. Ya no puedo tomar café de cadena.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">MO</span><span><b>Mariana Ortega</b><span>Viene desde 2023</span></span></figcaption></figure>
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>Llevo dos años trabajando desde el segundo piso. El wifi nunca falla y nadie me corre.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">DS</span><span><b>Diego Sandoval</b><span>Trabaja aquí los martes</span></span></figcaption></figure>
+<figure class="rev glass" data-reveal style="margin:0"><div class="stars" role="img" aria-label="5 de 5 estrellas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></div><blockquote>Llego a las 7:30 por la concha recién salida. A las 10 ya no queda ninguna.</blockquote><figcaption class="who"><span class="av" aria-hidden="true">RI</span><span><b>Renata Ibarra</b><span>Vecina de la Roma</span></span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="cierre">
+    <div class="wrap">
+      <div class="final-box" data-reveal>
+        <h2>Tu mesa te espera junto a la ventana.</h2>
+        <p>Reserva en un minuto y te guardamos el lugar 15 minutos después de tu hora.</p>
+        <div class="cta-row">
+          <a class="btn btn-inv" href="#" data-demo>Reservar mesa<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+          <a class="btn btn-gi" href="#" data-demo>Cómo llegar</a>
+        </div>
+        <ul class="final-meta"><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Orizaba 148, Roma Norte, CDMX</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /></svg>Lunes a domingo, 7:30 a 21:00</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>55 0000 0148</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="foot">
+    <p>Niebla Café es un negocio ficticio creado como muestra de diseño.</p>
+    <p>Hecho por <a href="https://rig.godsplan.site/">GodsRig</a> · by <a href="https://godsplan.site/">God's Plan</a> · <a href="index.html">Ver más ejemplos</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Esto es un ejemplo. En tu página, este botón abriría el WhatsApp o las reservas de tu negocio. <a href="https://wa.me/525510590927?text=Hola%2C%20vi%20el%20ejemplo%20de%20Niebla%20Caf%C3%A9%20en%20GodsRig%20y%20quiero%20una%20p%C3%A1gina%20as%C3%AD%20para%20mi%20negocio." target="_blank" rel="noopener">Pide la tuya</a></div>
+
+<script>
+(function(){
+  var d=document,root=d.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Aparición escalonada al entrar a la pantalla
+  var els=[].slice.call(d.querySelectorAll('[data-reveal]'));
+  els.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){return c.hasAttribute('data-reveal')});
+    el.style.setProperty('--d',(sib.indexOf(el)*110)+'ms');
+  });
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('is-in')})}
+  // Inclinación 3D de las tarjetas (solo con mouse)
+  if(!reduce&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+    d.querySelectorAll('[data-tilt]').forEach(function(el){
+      el.addEventListener('pointermove',function(e){
+        var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+        el.style.setProperty('--ry',((x-.5)*9).toFixed(2)+'deg');
+        el.style.setProperty('--rx',((.5-y)*9).toFixed(2)+'deg');
+        el.style.setProperty('--mx',(x*100).toFixed(1)+'%');
+        el.style.setProperty('--my',(y*100).toFixed(1)+'%');
+      });
+      el.addEventListener('pointerleave',function(){el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg')});
+    });
+  }
+  // Botones de demostración: avisan que es un ejemplo
+  var t=d.getElementById('toast'),timer;
+  d.querySelectorAll('[data-demo]').forEach(function(b){
+    b.addEventListener('click',function(e){e.preventDefault();t.classList.add('on');clearTimeout(timer);timer=setTimeout(function(){t.classList.remove('on')},5200)});
+  });
+})();
+</script>
+</body>
+</html>

@@ -8,6 +8,7 @@ Soporte técnico y ensamble de PC: mantenimiento y limpieza, optimización de si
 
 - `index.html`: página principal con servicios estrella y contacto.
 - `catalogo.html`: catálogo completo de servicios con precios.
+- `ejemplos/`: páginas web de muestra para negocios ficticios (cafetería, taquería, barbería y gimnasio). Cada una es un solo archivo HTML, sin instalación; los colores y tipografías se cambian en el bloque `:root` al inicio del archivo.
 
 ## Tecnología
 
