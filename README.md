@@ -2,7 +2,7 @@
 
 Soporte técnico y ensamble de PC: mantenimiento y limpieza, optimización de sistema, upgrades de componentes (RAM, SSD, tarjeta gráfica) y armado de equipos a medida.
 
-**Sitio:** https://rig.godsplan.site
+**Sitio:** https://rig.godsplan.dev
 
 ## Qué incluye
 
@@ -16,9 +16,9 @@ HTML, Tailwind CSS (por CDN) y Font Awesome. No necesita instalación ni servido
 
 ## Publicación
 
-Se publica con GitHub Pages desde la rama `main`. El dominio `rig.godsplan.site` se configura en Settings > Pages, con un registro CNAME hacia `blqa.github.io` en el DNS del dominio.
+Se publica con GitHub Pages desde la rama `main`. El dominio `rig.godsplan.dev` se configura en Settings > Pages, con un registro CNAME hacia `blqa.github.io` en el DNS del dominio.
 
 ---
 
-Un proyecto de **[God's Plan](https://godsplan.site)** · agencia de proyectos.
-Contacto: [contacto@godsplan.site](mailto:contacto@godsplan.site)
+Un proyecto de **[God's Plan](https://godsplan.dev)** · agencia de proyectos.
+Contacto: [contacto@godsplan.dev](mailto:contacto@godsplan.dev)
