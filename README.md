@@ -12,7 +12,13 @@ Soporte técnico y ensamble de PC: mantenimiento y limpieza, optimización de si
 
 ## Tecnología
 
-HTML, Tailwind CSS (por CDN) y Font Awesome. No necesita instalación ni servidor: abre `index.html` en el navegador (requiere internet para cargar las librerías).
+HTML y CSS propios, sin librerías externas. Sigue el sistema de diseño de God's Plan (`DESIGN_SYSTEM.md` en [blqa/godsplan-site](https://github.com/blqa/godsplan-site)):
+
+- `assets/rig.css`: tokens, fuentes y componentes. El bloque de arriba (hasta `FIN DEL BLOQUE COMPARTIDO`) es copia de `godsplan.dev/assets/site.css`; si cambia un color o una fuente, se cambia allá primero.
+- `assets/rig.js`: fondo del encabezado al hacer scroll y aparición suave de secciones.
+- `assets/fonts/`: Montserrat, Inter y Martian Mono alojadas aquí (`.woff2`, licencia OFL).
+
+No necesita instalación ni internet: abre `index.html` en el navegador. Las páginas de `ejemplos/` conservan su propio estilo (Tailwind por CDN) porque son demostraciones para cada tipo de negocio.
 
 ## Publicación
 
