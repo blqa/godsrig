@@ -3,21 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Página no encontrada | GodsRig</title>
+    <meta name="description" content="Esta página no existe o cambió de lugar.">
     <meta name="robots" content="noindex">
     <meta name="theme-color" content="#0b0a0a">
-    <title>Página no encontrada | GodsRig</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230b0a0a'/%3E%3Cpath%20d='M28%2010h8v16h16v8H36v22h-8V34H12v-8h16z'%20fill='%23ef5058'/%3E%3C/svg%3E">
-    <!-- Rutas absolutas: GitHub Pages sirve esta página en cualquier URL que no exista -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="GodsRig · by God's Plan">
+    <meta property="og:title" content="Página no encontrada | GodsRig">
+    <meta property="og:description" content="Esta página no existe o cambió de lugar.">
+    <meta property="og:url" content="https://rig.godsplan.dev/404.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Página no encontrada | GodsRig">
+    <meta name="twitter:description" content="Esta página no existe o cambió de lugar.">
+    <script>
+        document.documentElement.classList.add('js', 'txt-ready');
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+    </script>
+    <link rel="preload" href="/assets/fonts/Montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/estudio.css">
     <link rel="stylesheet" href="/assets/rig.css">
 </head>
 <body>
-    <main class="notfound">
-        <div>
-            <p class="mono" style="color:var(--gp-text-3)">rig.godsplan.dev</p>
-            <h1>404<span>.</span></h1>
-            <p>Esta página no existe o cambió de lugar.</p>
-            <a href="/" class="btn btn--primary">Volver a GodsRig</a>
+    <!-- Íconos: trazo propio de 1.6px; el glifo de WhatsApp es de Font Awesome Free (CC BY 4.0) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx=".5"/><path d="M9.5 3v4M14.5 3v4M9.5 17v4M14.5 17v4M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+        <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="m12 13 4-5"/><circle cx="12" cy="13" r="1.3"/></symbol>
+        <symbol id="i-fan" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><circle cx="12" cy="12" r="1.6"/><path d="M12 10.4c0-3 1-4.6 3-4.6s2 3-3 4.6zM13.6 12c3 0 4.6 1 4.6 3s-3 2-4.6-3zM12 13.6c0 3-1 4.6-3 4.6s-2-3 3-4.6zM10.4 12c-3 0-4.6-1-4.6-3s3-2 4.6 3z"/></symbol>
+        <symbol id="i-ssd" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="11" rx="2"/><path d="M7 10.5h6M7 13.5h4"/><circle cx="17" cy="12" r="1.2"/></symbol>
+        <symbol id="i-tower" viewBox="0 0 24 24"><rect x="6.5" y="3" width="11" height="18" rx="1.5"/><path d="M9.5 6.5h5M9.5 9h5"/><circle cx="12" cy="15" r="2.2"/></symbol>
+        <symbol id="i-ram" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="8" rx="1"/><path d="M6 10h2.5v2H6zM10.75 10h2.5v2h-2.5zM15.5 10H18v2h-2.5zM5 15v2.5M9 15v2.5M15 15v2.5M19 15v2.5"/></symbol>
+        <symbol id="i-gpu" viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="19" height="10" rx="1.5"/><circle cx="9" cy="11.5" r="2.6"/><circle cx="16" cy="11.5" r="2.6"/><path d="M5 16.5v2.5M8 19h10"/></symbol>
+        <symbol id="i-win" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16.5V20"/><path d="m9 10.5 2 2 4-4"/></symbol>
+        <symbol id="i-temp" viewBox="0 0 24 24"><path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a3.5 3.5 0 1 1-4 0z"/><path d="M12 9v7"/></symbol>
+        <symbol id="i-remote" viewBox="0 0 24 24"><rect x="3" y="4.5" width="13" height="9" rx="1.5"/><rect x="13" y="10.5" width="8" height="9" rx="1.5"/><path d="M7 17h4"/></symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+        <symbol id="i-wa" viewBox="0 0 448 512"><path d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+    </svg>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+    <!-- ENCABEZADO: cápsula flotante -->
+    <header class="hdr" id="header">
+        <div class="hdr__pill">
+            <div class="brand-wrap">
+                <a href="/" class="brand" aria-label="GodsRig, inicio">
+                    <span class="brand__tile"><svg class="icon" aria-hidden="true"><use href="#i-chip"/></svg></span>
+                    <span class="brand__name">Gods<b>Rig</b></span>
+                </a>
+                <a class="gp-by" href="https://godsplan.dev" target="_blank" rel="noopener">
+                    <svg class="gp-by__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M28 10h8v16h16v8H36v22h-8V34H12v-8h16z"/></svg>
+                    by God's Plan
+                </a>
+            </div>
+            <nav class="hdr__nav" aria-label="Principal">
+                <a href="/#servicios">Servicios</a>
+                <a href="/#precios">Precios</a>
+                <a href="/catalogo.html" aria-current="page">Catálogo</a>
+                <a href="/ejemplos/">Webs</a>
+            </nav>
+            <div class="hdr__end">
+                <a class="hdr__wa" href="https://wa.me/525510590927" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-wa"/></svg></a>
+                <a href="https://wa.me/525510590927" target="_blank" rel="noopener noreferrer" class="btn btn--light btn--sm">Cotizar <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
         </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero hero--page hero--404" aria-labelledby="nf-t">
+            <div class="hero__bands" aria-hidden="true"></div>
+            <div class="hero__glow" aria-hidden="true"></div>
+            <div class="wrap center page-head">
+                <p class="tag" data-enter style="--d:0"><span>rig.godsplan.dev</span></p>
+                <h1 class="hero__title nf__code" id="nf-t"><span class="wd" style="--i:0">404</span><em class="wd" style="--i:1">.</em></h1>
+                <p class="hero__sub" data-enter style="--d:2">Esta página no existe o cambió de lugar.</p>
+                <div class="actions actions--center" data-enter style="--d:3"><a href="/" class="btn btn--primary">Volver a GodsRig <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </div>
+        </section>
     </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="ftr">
+        <div class="wrap">
+            <div class="ftr__row">
+                <div class="ftr__about">
+                    <a href="/" class="brand"><span class="brand__tile"><svg class="icon" aria-hidden="true"><use href="#i-chip"/></svg></span><span class="brand__name">Gods<b>Rig</b></span></a>
+                    <p>GodsRig es un proyecto de <a href="https://godsplan.dev">God's Plan</a>, estudio de software.</p>
+                </div>
+                <nav class="ftr__links" aria-label="Pie de página">
+                    <a href="/catalogo.html">Catálogo</a>
+                    <a href="/ejemplos/">Ejemplos de webs</a>
+                    <a href="https://godsplan.dev">God's Plan</a>
+                    <a href="https://godsplan.dev/privacidad.html">Aviso de privacidad</a>
+                    <a href="https://godsplan.dev/tyc.html">Términos y condiciones</a>
+                    <a href="mailto:contacto@godsplan.dev">contacto@godsplan.dev</a>
+                </nav>
+            </div>
+            <p class="ftr__word" aria-hidden="true">GodsRig</p>
+            <p class="ftr__base mono">&copy; 2026 GodsRig · by God's Plan · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Sello de la familia God's Plan (DESIGN_SYSTEM.md §8) -->
+    <div class="gp-family">
+        <div class="gp-family__inner">
+            <a class="gp-family__home" href="https://godsplan.dev">
+                <svg class="gp-by__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M28 10h8v16h16v8H36v22h-8V34H12v-8h16z"/></svg>
+                <span>Un proyecto de <strong>God's Plan</strong></span>
+            </a>
+            <nav class="gp-family__links" aria-label="Proyectos de God's Plan">
+                <a href="https://godsplan.dev">godsplan.dev</a>
+                <a href="https://godstap.godsplan.dev">godstap</a>
+                <a href="https://rig.godsplan.dev" aria-current="page">rig</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="/assets/rig.js" defer></script>
 </body>
 </html>

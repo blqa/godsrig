@@ -14,11 +14,13 @@ Soporte técnico y ensamble de PC: mantenimiento y limpieza, optimización de si
 
 HTML y CSS propios, sin librerías externas. Sigue el sistema de diseño de God's Plan (`DESIGN_SYSTEM.md` en [blqa/godsplan-site](https://github.com/blqa/godsplan-site)):
 
-- `assets/rig.css`: tokens, fuentes y componentes. El bloque de arriba (hasta `FIN DEL BLOQUE COMPARTIDO`) es copia de `godsplan.dev/assets/site.css`; si cambia un color o una fuente, se cambia allá primero.
+- `assets/estudio.css`: estilo "estudio" compartido (cápsula flotante, órbita, tarjetas, panel de método, contacto). Es copia de `godsplan.dev/assets/home.css`; si cambia un componente común, se cambia allá primero.
+- `assets/rig.css`: lo propio de GodsRig (precios, catálogo, sello "by God's Plan").
+- `assets/rig.js`: animaciones (aparición, luz de las tarjetas, órbita).
 - `assets/rig.js`: fondo del encabezado al hacer scroll y aparición suave de secciones.
 - `assets/fonts/`: Montserrat, Inter y Martian Mono alojadas aquí (`.woff2`, licencia OFL).
 
-No necesita instalación ni internet: abre `index.html` en el navegador. Las páginas de `ejemplos/` conservan su propio estilo (Tailwind por CDN) porque son demostraciones para cada tipo de negocio.
+No necesita instalación. Las rutas empiezan con `/` (por ejemplo `/assets/estudio.css`), así que para verlo en tu compu ábrelo con un servidor local, por ejemplo `python -m http.server` dentro de la carpeta, y entra a `http://localhost:8000`. Las páginas de `ejemplos/` conservan su propio estilo (Tailwind por CDN) porque son demostraciones para cada tipo de negocio.
 
 ## Publicación
 
