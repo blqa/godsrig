@@ -525,7 +525,7 @@ em { font-style: normal; }
   .hdr__nav { display: none; }
   .method__head { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
-  .step, .step:nth-child(even) { padding: 1.75rem 0; border-right: 0; }
+  .step, .step:nth-child(odd), .step:nth-child(even) { padding: 1.75rem 0; border-right: 0; }
 }
 @media (max-width: 560px) {
   .hdr { inset-block-start: .5rem; }
