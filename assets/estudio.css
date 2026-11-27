@@ -457,7 +457,7 @@ em { font-style: normal; }
 .browser__bar .mono { margin-left: .6rem; font-size: .6875rem; }
 
 /* ---------- 5. Cómo trabajamos ---------- */
-.method { position: relative; margin-top: -1px; background: linear-gradient(180deg, var(--gp-paper) 50%, var(--gp-bg-0) 50%); }
+.method { position: relative; margin-top: -1px; background: var(--gp-bg-0); }
 .method > .wrap { max-width: none; padding: 0; }
 .method::before { content: ""; position: absolute; inset: 0; background: var(--gp-bg-1); border-radius: var(--gp-radius-xl); }
 .method > .wrap {

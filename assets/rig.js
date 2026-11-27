@@ -39,16 +39,5 @@
         });
     }
 
-    // Aparición al hacer scroll
-    var items = document.querySelectorAll('[data-reveal]');
-    if (!motion || !('IntersectionObserver' in window)) {
-        items.forEach(function (el) { el.classList.add('is-in'); });
-        return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-            if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
-        });
-    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-    items.forEach(function (el) { io.observe(el); });
+    // La aparición al bajar y la barra de progreso las hace gp-kit.js (Motion)
 })();
